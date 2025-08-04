@@ -1,0 +1,1 @@
+iverilog -o result.vvp -c list.f
