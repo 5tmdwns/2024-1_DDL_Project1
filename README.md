@@ -1,2 +1,9 @@
-# 2024-1_DDL_Project1
-경희대학교 2024-1학기 디지털설계및언어 프로젝트1
+<p align="center">
+  <h1 align="center">스마트 도어락 설계✨</h1>
+</p>
+<p align="center">
+
+</p>
+<p align="center">
+
+</p>
