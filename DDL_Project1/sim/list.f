@@ -1,9 +1,0 @@
-./../rtl/top_module.v
-#./../rtl/alert_counter_tb.v
-./../rtl/alert_counter.v
-./../rtl/button.v
-./../rtl/compare.v
-./../rtl/display.v
-./../rtl/pw_reset.v
-./../rtl/random_numbers.v
-./../rtl/top_module_tb.v
