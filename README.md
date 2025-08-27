@@ -447,7 +447,7 @@ cnt 가 5 가되면, alert 는 0 이 되고, 동시에 alert_off 를 1 로 신�
 
 ### 7. top_module 모듈
 <img width="100%" alt="image" src="https://github.com/user-attachments/assets/18ab5bb4-744f-480a-9e7b-1da59e18bc20" />
-<동적 키패드 배열 소개 및 초기 비밀번호 0000> <br/>
+[동적 키패드 배열 소개 및 초기 비밀번호 0000] <br/><br/>
 
 &nbsp;비빌먼호 초기값이 000 으로 설정 되어있어 비밀번호를 바꾸기 위한 과정입니다. <br/>
 button[9:0]은 0 번째 부터 9 번째까지 디스플레이 0 ~ 9 에 해당합니다. <br/>
@@ -459,33 +459,33 @@ button[9:0]에서 숫자 0 이 9 번째 순서로 이동 됩니다. <br/>
 따라서, display 에 0000 이 출력되는 것을 볼 수 있습니다. <br/>
 
 <img width="100%" alt="image" src="https://github.com/user-attachments/assets/f929cbd0-4d12-49c4-b24f-6a7804f3c7af" />
-<문열림 상태에서 비밀번호 재설정> <br/>
+[문열림 상태에서 비밀번호 재설정] <br/><br/>
 
 &nbsp;문열림 상태에서 *(star)버튼을 누르면 비밀번호를 재설정 할 수 있습니다. <br/>
 이상태에서 button[9:0] 의 숫자 9, 8, 7, 6을 입력하여 비밀번호를 9876으로 재설정 합니다. <br/>
 재설정할때에도, 해당숫자의 위치는 바뀝니다. <br/>
 
 <img width="100%" alt="image" src="https://github.com/user-attachments/assets/f53b087c-8a62-498e-9988-54a7409426f3" />
-<close_sensor(걸쇠)의 역할> <br/>
+[close_sensor(걸쇠)의 역할] <br/><br/>
 
 &nbsp;close_sensor(걸쇠)의 역할은 비밀번호 입력 후, 문이 열리고 닫힐 때의 걸쇠 역할을 해줍니다. <br/>
 1 의 신호를 줬다는 의미는, 문이 걸쇠에 걸리고 닫힘 상태에 들어간다는 것 입니다. <br/>
 이후, unlock 이 0 으로 되어 문이 닫혔다는 것을 알려줍니다. <br/>
 
 <img width="100%" alt="image" src="https://github.com/user-attachments/assets/fea6cb13-fc8e-41a6-9d2c-664eded73bb6" />
-<비밀번호 9876으로 변경 후 도어락의 동작> <br/>
+[비밀번호 9876으로 변경 후 도어락의 동작] <br/><br/>
 
 &nbsp;9876으로 비밀번호를 변경한 뒤, 도어락이 정상 작동하는 것을 알 수 있습니다. <br/>
 
 <img width="100%" alt="image" src="https://github.com/user-attachments/assets/989685f5-e693-4d01-a695-7bacba3a02b9" />
-<임시 비밀번호(pw_temp)의 재설정> <br/>
+[임시 비밀번호(pw_temp)의 재설정] <br/><br/>
 
 &nbsp;문이 열린 상태에서, #(hash)버튼을 누르면 임시 비밀번호를 재설정하는 상태로 들어갑니다. <br/>
 이때에도, 숫자의 물리적 위치는 바뀌며, display 도 출력되는 것을 알 수 있습니다. <br/>
 밑의 pw_temp[15:0]의 파형은 display[15:0]의 값을 받아와 설정하는 것을 알 수 있습니다. <br/>
 
 <img width="100%" alt="image" src="https://github.com/user-attachments/assets/360f5c40-1187-48b4-8666-83bcfa4ceb6b" />
-<임시 비밀번호(pw_temp)의 사용> <br/>
+[임시 비밀번호(pw_temp)의 사용] <br/><br/>
 
 &nbsp;임시 비밀번호(pw_temp)의 설정 이후, 임시 비밀번호를 사용하여 문을 여는 상황입니다. <br/>
 임시 비밀번호(pw_temp)를 입력하고, *(star)를 입력할 시, pw_temp[15:0]에 저장되 있던 값은 바로 z(하이 임피던스)값으로 초기화 되는 것을 볼 수 있습니다. <br/>
@@ -497,7 +497,7 @@ button[9:0]에서 숫자 0 이 9 번째 순서로 이동 됩니다. <br/>
 <img width="100%" alt="image" src="https://github.com/user-attachments/assets/1db163b6-d977-4e23-90f9-bf613eb02a83" />
 <img width="100%" alt="image" src="https://github.com/user-attachments/assets/4b8cb50b-82d4-4147-8203-f17f5b3fda22" />
 <img width="100%" alt="image" src="https://github.com/user-attachments/assets/4840a846-66b8-4c50-8e7b-7130341c94c7" />
-<alert의 기능(alert가 울린 뒤, 5 clock cycle 뒤에 종료)> <br/>
+[alert의 기능(alert가 울린 뒤, 5 clock cycle 뒤에 종료)] <br/><br/>
 
 &nbsp;임시 비밀번호 1111은 사용되었으므로, 더 이상 문을 open 시키는 데에는 유효한비밀번호가 아닙니다. <br/>
 이 비밀번호 1111을 5 번 입력하게 되면, wrong 이 점점 증가 하게 되는데, 5번이 되었을 시, alert가 울립니다. <br/>
@@ -505,7 +505,7 @@ button[9:0]에서 숫자 0 이 9 번째 순서로 이동 됩니다. <br/>
 alert가 울리고 클락의 주기를 alert_counter 가 카운터를 하며, cnt[2:0]가 5가 되었을 시에 초기화를 하여 alert를 꺼줍니다. <br/>
 
 <img width="100%" alt="image" src="https://github.com/user-attachments/assets/50b17723-4ab9-4ae2-b696-b33198283f67" />
-<잠금 비활성화 장치(걸쇠에 걸려도 문이 항상 open)> <br/>
+[잠금 비활성화 장치(걸쇠에 걸려도 문이 항상 open)] <br/><br/>
 
 &nbsp;비밀번호를 입력하여 문을 열고, open_button을 3초이상 누를 시, always_open의 값이 1로 바뀝니다. <br/>
 이 상태에서는 문을 닫아도(close_sensor 의 입력을 주어도) 문은 항상 open 됩니다. <br/>
