@@ -1,0 +1,1 @@
+xsim_sub -f list.f -t TB_TOP -o result.wdb &
